@@ -1,6 +1,5 @@
-mod file_chooser;
-mod intro_win;
-mod ex_menu_button;
+mod start;
+mod appwindow;
 
 use gtk::prelude::*;
 use gtk::{Application, ApplicationWindow};
@@ -14,7 +13,8 @@ fn main() {
 
     // Connect to "activate" signal of `app`
     app.connect_activate(|app| {
-        let win = intro_win::ExApplicationWindow::new(app);
+        // let win = example_win::ExApplicationWindow::new(app);
+        let win = start::StartWindow::new(app);
         win.show();
     });
 

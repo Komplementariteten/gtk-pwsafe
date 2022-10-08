@@ -12,7 +12,7 @@ pub struct ExApplicationWindow {
     // The #[template_child] attribute tells the CompositeTemplate macro
     // that a field is meant to be a child within the template.
     #[template_child]
-    pub headerbar: TemplateChild<gtk::SearchBar>,
+    pub headerbar: TemplateChild<gtk::HeaderBar>,
     #[template_child]
     pub label: TemplateChild<gtk::Label>,
     // You can specify the optional `id` argument if the id is not the same
